@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		084BB2960E07E6A1850A7302 /* Pods_Movillium_MovilliumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA7493381B842B9A7A342B /* Pods_Movillium_MovilliumUITests.framework */; };
+		982BDE1A291D80A600269098 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BDE19291D80A600269098 /* ApiManager.swift */; };
+		98C9568F291D7E020035F073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9568E291D7E020035F073 /* AppDelegate.swift */; };
+		98C95691291D7E020035F073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C95690291D7E020035F073 /* SceneDelegate.swift */; };
+		98C95693291D7E020035F073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C95692291D7E020035F073 /* ViewController.swift */; };
+		98C95696291D7E020035F073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C95694291D7E020035F073 /* Main.storyboard */; };
+		98C95698291D7E050035F073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C95697291D7E050035F073 /* Assets.xcassets */; };
+		98C9569B291D7E050035F073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C95699291D7E050035F073 /* LaunchScreen.storyboard */; };
+		98C956A6291D7E050035F073 /* MovilliumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C956A5291D7E050035F073 /* MovilliumTests.swift */; };
+		98C956B0291D7E050035F073 /* MovilliumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C956AF291D7E050035F073 /* MovilliumUITests.swift */; };
+		98C956B2291D7E050035F073 /* MovilliumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C956B1291D7E050035F073 /* MovilliumUITestsLaunchTests.swift */; };
+		9D3AEDEC4E9B3DC5D2430017 /* Pods_Movillium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B51F186B38424861243727 /* Pods_Movillium.framework */; };
+		A2623227BFD967FA734B883B /* Pods_MovilliumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D99BC66A59FD09C7475D4B /* Pods_MovilliumTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98C956A2291D7E050035F073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98C95683291D7E020035F073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98C9568A291D7E020035F073;
+			remoteInfo = Movillium;
+		};
+		98C956AC291D7E050035F073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98C95683291D7E020035F073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98C9568A291D7E020035F073;
+			remoteInfo = Movillium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A9F54B0AB5283A2FD673452 /* Pods-Movillium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movillium.debug.xcconfig"; path = "Target Support Files/Pods-Movillium/Pods-Movillium.debug.xcconfig"; sourceTree = "<group>"; };
+		20D99BC66A59FD09C7475D4B /* Pods_MovilliumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovilliumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		284191CBCF9368AA9B7B9854 /* Pods-Movillium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movillium.release.xcconfig"; path = "Target Support Files/Pods-Movillium/Pods-Movillium.release.xcconfig"; sourceTree = "<group>"; };
+		29B8D3F9E08BEE70D3579428 /* Pods-MovilliumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovilliumTests.release.xcconfig"; path = "Target Support Files/Pods-MovilliumTests/Pods-MovilliumTests.release.xcconfig"; sourceTree = "<group>"; };
+		6414AE1CF93134C2F6470B14 /* Pods-MovilliumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovilliumTests.debug.xcconfig"; path = "Target Support Files/Pods-MovilliumTests/Pods-MovilliumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80CA7493381B842B9A7A342B /* Pods_Movillium_MovilliumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movillium_MovilliumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B51F186B38424861243727 /* Pods_Movillium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movillium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982BDE19291D80A600269098 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		98C9568B291D7E020035F073 /* Movillium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movillium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98C9568E291D7E020035F073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98C95690291D7E020035F073 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		98C95692291D7E020035F073 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98C95695291D7E020035F073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98C95697291D7E050035F073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98C9569A291D7E050035F073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98C9569C291D7E050035F073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98C956A1291D7E050035F073 /* MovilliumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovilliumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98C956A5291D7E050035F073 /* MovilliumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovilliumTests.swift; sourceTree = "<group>"; };
+		98C956AB291D7E050035F073 /* MovilliumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovilliumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98C956AF291D7E050035F073 /* MovilliumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovilliumUITests.swift; sourceTree = "<group>"; };
+		98C956B1291D7E050035F073 /* MovilliumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovilliumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E70A516ECEBA883046FAD66C /* Pods-Movillium-MovilliumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movillium-MovilliumUITests.debug.xcconfig"; path = "Target Support Files/Pods-Movillium-MovilliumUITests/Pods-Movillium-MovilliumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FED09A390CF87874402B9A51 /* Pods-Movillium-MovilliumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movillium-MovilliumUITests.release.xcconfig"; path = "Target Support Files/Pods-Movillium-MovilliumUITests/Pods-Movillium-MovilliumUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98C95688291D7E020035F073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3AEDEC4E9B3DC5D2430017 /* Pods_Movillium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C9569E291D7E050035F073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2623227BFD967FA734B883B /* Pods_MovilliumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C956A8291D7E050035F073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084BB2960E07E6A1850A7302 /* Pods_Movillium_MovilliumUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0446B7DDE9EBACF4F198395F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F54B0AB5283A2FD673452 /* Pods-Movillium.debug.xcconfig */,
+				284191CBCF9368AA9B7B9854 /* Pods-Movillium.release.xcconfig */,
+				E70A516ECEBA883046FAD66C /* Pods-Movillium-MovilliumUITests.debug.xcconfig */,
+				FED09A390CF87874402B9A51 /* Pods-Movillium-MovilliumUITests.release.xcconfig */,
+				6414AE1CF93134C2F6470B14 /* Pods-MovilliumTests.debug.xcconfig */,
+				29B8D3F9E08BEE70D3579428 /* Pods-MovilliumTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		30E59A51325C3D8B958E3933 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87B51F186B38424861243727 /* Pods_Movillium.framework */,
+				80CA7493381B842B9A7A342B /* Pods_Movillium_MovilliumUITests.framework */,
+				20D99BC66A59FD09C7475D4B /* Pods_MovilliumTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		982BDE0F291D7EA800269098 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				98C9568E291D7E020035F073 /* AppDelegate.swift */,
+				98C95690291D7E020035F073 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		982BDE10291D7EC900269098 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				982BDE12291D7F2800269098 /* Model */,
+				982BDE13291D7F3300269098 /* View */,
+				982BDE14291D7F3900269098 /* ViewModel */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		982BDE11291D7ED000269098 /* DetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				982BDE17291D7F7100269098 /* Model */,
+				982BDE16291D7F6C00269098 /* View */,
+				982BDE15291D7F6300269098 /* ViewModel */,
+			);
+			path = DetailsModule;
+			sourceTree = "<group>";
+		};
+		982BDE12291D7F2800269098 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		982BDE13291D7F3300269098 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		982BDE14291D7F3900269098 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		982BDE15291D7F6300269098 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		982BDE16291D7F6C00269098 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		982BDE17291D7F7100269098 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		982BDE18291D808600269098 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				982BDE19291D80A600269098 /* ApiManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		98C95682291D7E020035F073 = {
+			isa = PBXGroup;
+			children = (
+				98C9568D291D7E020035F073 /* Movillium */,
+				98C956A4291D7E050035F073 /* MovilliumTests */,
+				98C956AE291D7E050035F073 /* MovilliumUITests */,
+				98C9568C291D7E020035F073 /* Products */,
+				0446B7DDE9EBACF4F198395F /* Pods */,
+				30E59A51325C3D8B958E3933 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98C9568C291D7E020035F073 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98C9568B291D7E020035F073 /* Movillium.app */,
+				98C956A1291D7E050035F073 /* MovilliumTests.xctest */,
+				98C956AB291D7E050035F073 /* MovilliumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98C9568D291D7E020035F073 /* Movillium */ = {
+			isa = PBXGroup;
+			children = (
+				982BDE18291D808600269098 /* Network */,
+				982BDE11291D7ED000269098 /* DetailsModule */,
+				982BDE10291D7EC900269098 /* MainModule */,
+				982BDE0F291D7EA800269098 /* App */,
+				98C95692291D7E020035F073 /* ViewController.swift */,
+				98C95694291D7E020035F073 /* Main.storyboard */,
+				98C95697291D7E050035F073 /* Assets.xcassets */,
+				98C95699291D7E050035F073 /* LaunchScreen.storyboard */,
+				98C9569C291D7E050035F073 /* Info.plist */,
+			);
+			path = Movillium;
+			sourceTree = "<group>";
+		};
+		98C956A4291D7E050035F073 /* MovilliumTests */ = {
+			isa = PBXGroup;
+			children = (
+				98C956A5291D7E050035F073 /* MovilliumTests.swift */,
+			);
+			path = MovilliumTests;
+			sourceTree = "<group>";
+		};
+		98C956AE291D7E050035F073 /* MovilliumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98C956AF291D7E050035F073 /* MovilliumUITests.swift */,
+				98C956B1291D7E050035F073 /* MovilliumUITestsLaunchTests.swift */,
+			);
+			path = MovilliumUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98C9568A291D7E020035F073 /* Movillium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98C956B5291D7E050035F073 /* Build configuration list for PBXNativeTarget "Movillium" */;
+			buildPhases = (
+				D2F241032809239FBD88621A /* [CP] Check Pods Manifest.lock */,
+				98C95687291D7E020035F073 /* Sources */,
+				98C95688291D7E020035F073 /* Frameworks */,
+				98C95689291D7E020035F073 /* Resources */,
+				B932D48E278D6E4BBE9D7750 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Movillium;
+			productName = Movillium;
+			productReference = 98C9568B291D7E020035F073 /* Movillium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98C956A0291D7E050035F073 /* MovilliumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98C956B8291D7E050035F073 /* Build configuration list for PBXNativeTarget "MovilliumTests" */;
+			buildPhases = (
+				E367EDC2BA71A480D604C1C3 /* [CP] Check Pods Manifest.lock */,
+				98C9569D291D7E050035F073 /* Sources */,
+				98C9569E291D7E050035F073 /* Frameworks */,
+				98C9569F291D7E050035F073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98C956A3291D7E050035F073 /* PBXTargetDependency */,
+			);
+			name = MovilliumTests;
+			productName = MovilliumTests;
+			productReference = 98C956A1291D7E050035F073 /* MovilliumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98C956AA291D7E050035F073 /* MovilliumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98C956BB291D7E050035F073 /* Build configuration list for PBXNativeTarget "MovilliumUITests" */;
+			buildPhases = (
+				279DF21E80123C7489598697 /* [CP] Check Pods Manifest.lock */,
+				98C956A7291D7E050035F073 /* Sources */,
+				98C956A8291D7E050035F073 /* Frameworks */,
+				98C956A9291D7E050035F073 /* Resources */,
+				C3882A05A60D43EB4F91A150 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98C956AD291D7E050035F073 /* PBXTargetDependency */,
+			);
+			name = MovilliumUITests;
+			productName = MovilliumUITests;
+			productReference = 98C956AB291D7E050035F073 /* MovilliumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98C95683291D7E020035F073 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					98C9568A291D7E020035F073 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					98C956A0291D7E050035F073 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 98C9568A291D7E020035F073;
+					};
+					98C956AA291D7E050035F073 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 98C9568A291D7E020035F073;
+					};
+				};
+			};
+			buildConfigurationList = 98C95686291D7E020035F073 /* Build configuration list for PBXProject "Movillium" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98C95682291D7E020035F073;
+			productRefGroup = 98C9568C291D7E020035F073 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98C9568A291D7E020035F073 /* Movillium */,
+				98C956A0291D7E050035F073 /* MovilliumTests */,
+				98C956AA291D7E050035F073 /* MovilliumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98C95689291D7E020035F073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98C9569B291D7E050035F073 /* LaunchScreen.storyboard in Resources */,
+				98C95698291D7E050035F073 /* Assets.xcassets in Resources */,
+				98C95696291D7E020035F073 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C9569F291D7E050035F073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C956A9291D7E050035F073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		279DF21E80123C7489598697 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Movillium-MovilliumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B932D48E278D6E4BBE9D7750 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Movillium/Pods-Movillium-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Movillium/Pods-Movillium-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Movillium/Pods-Movillium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3882A05A60D43EB4F91A150 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Movillium-MovilliumUITests/Pods-Movillium-MovilliumUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Movillium-MovilliumUITests/Pods-Movillium-MovilliumUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Movillium-MovilliumUITests/Pods-Movillium-MovilliumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2F241032809239FBD88621A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Movillium-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E367EDC2BA71A480D604C1C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovilliumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98C95687291D7E020035F073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982BDE1A291D80A600269098 /* ApiManager.swift in Sources */,
+				98C95693291D7E020035F073 /* ViewController.swift in Sources */,
+				98C9568F291D7E020035F073 /* AppDelegate.swift in Sources */,
+				98C95691291D7E020035F073 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C9569D291D7E050035F073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98C956A6291D7E050035F073 /* MovilliumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C956A7291D7E050035F073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98C956B0291D7E050035F073 /* MovilliumUITests.swift in Sources */,
+				98C956B2291D7E050035F073 /* MovilliumUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98C956A3291D7E050035F073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98C9568A291D7E020035F073 /* Movillium */;
+			targetProxy = 98C956A2291D7E050035F073 /* PBXContainerItemProxy */;
+		};
+		98C956AD291D7E050035F073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98C9568A291D7E020035F073 /* Movillium */;
+			targetProxy = 98C956AC291D7E050035F073 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98C95694291D7E020035F073 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98C95695291D7E020035F073 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98C95699291D7E050035F073 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98C9569A291D7E050035F073 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98C956B3291D7E050035F073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98C956B4291D7E050035F073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98C956B6291D7E050035F073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A9F54B0AB5283A2FD673452 /* Pods-Movillium.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A3LU4KVXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Movillium/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayberkmogol.Movillium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98C956B7291D7E050035F073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 284191CBCF9368AA9B7B9854 /* Pods-Movillium.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A3LU4KVXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Movillium/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayberkmogol.Movillium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98C956B9291D7E050035F073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6414AE1CF93134C2F6470B14 /* Pods-MovilliumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A3LU4KVXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayberkmogol.MovilliumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movillium.app/Movillium";
+			};
+			name = Debug;
+		};
+		98C956BA291D7E050035F073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B8D3F9E08BEE70D3579428 /* Pods-MovilliumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A3LU4KVXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayberkmogol.MovilliumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movillium.app/Movillium";
+			};
+			name = Release;
+		};
+		98C956BC291D7E050035F073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E70A516ECEBA883046FAD66C /* Pods-Movillium-MovilliumUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A3LU4KVXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayberkmogol.MovilliumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Movillium;
+			};
+			name = Debug;
+		};
+		98C956BD291D7E050035F073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED09A390CF87874402B9A51 /* Pods-Movillium-MovilliumUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A3LU4KVXCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayberkmogol.MovilliumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Movillium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98C95686291D7E020035F073 /* Build configuration list for PBXProject "Movillium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98C956B3291D7E050035F073 /* Debug */,
+				98C956B4291D7E050035F073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98C956B5291D7E050035F073 /* Build configuration list for PBXNativeTarget "Movillium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98C956B6291D7E050035F073 /* Debug */,
+				98C956B7291D7E050035F073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98C956B8291D7E050035F073 /* Build configuration list for PBXNativeTarget "MovilliumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98C956B9291D7E050035F073 /* Debug */,
+				98C956BA291D7E050035F073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98C956BB291D7E050035F073 /* Build configuration list for PBXNativeTarget "MovilliumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98C956BC291D7E050035F073 /* Debug */,
+				98C956BD291D7E050035F073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98C95683291D7E020035F073 /* Project object */;
+}
