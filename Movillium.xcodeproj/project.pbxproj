@@ -13,6 +13,9 @@
 		98B945F9291E8FAC0030F3B5 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B945F7291E8FAC0030F3B5 /* MainTableViewCell.xib */; };
 		98B945FC291EA35F0030F3B5 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B945FA291EA35F0030F3B5 /* DetailsViewController.swift */; };
 		98B945FD291EA35F0030F3B5 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B945FB291EA35F0030F3B5 /* DetailsViewController.xib */; };
+		98B945FF291EB3F40030F3B5 /* DetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B945FE291EB3F40030F3B5 /* DetailsEntity.swift */; };
+		98B94601291EB4040030F3B5 /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B94600291EB4040030F3B5 /* DetailsModel.swift */; };
+		98B94603291EB41B0030F3B5 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B94602291EB41B0030F3B5 /* DetailsViewModel.swift */; };
 		98C9568F291D7E020035F073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9568E291D7E020035F073 /* AppDelegate.swift */; };
 		98C95698291D7E050035F073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C95697291D7E050035F073 /* Assets.xcassets */; };
 		98C9569B291D7E050035F073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C95699291D7E050035F073 /* LaunchScreen.storyboard */; };
@@ -60,6 +63,9 @@
 		98B945F7291E8FAC0030F3B5 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		98B945FA291EA35F0030F3B5 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		98B945FB291EA35F0030F3B5 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		98B945FE291EB3F40030F3B5 /* DetailsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEntity.swift; sourceTree = "<group>"; };
+		98B94600291EB4040030F3B5 /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		98B94602291EB41B0030F3B5 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		98C9568B291D7E020035F073 /* Movillium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movillium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C9568E291D7E020035F073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98C95697291D7E050035F073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,6 +197,7 @@
 		982BDE15291D7F6300269098 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				98B94602291EB41B0030F3B5 /* DetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -207,6 +214,8 @@
 		982BDE17291D7F7100269098 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				98B945FE291EB3F40030F3B5 /* DetailsEntity.swift */,
+				98B94600291EB4040030F3B5 /* DetailsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -538,9 +547,12 @@
 				98B945F8291E8FAC0030F3B5 /* MainTableViewCell.swift in Sources */,
 				98CDC14F291D881900A9D000 /* MainViewController.swift in Sources */,
 				98CDC15C291DB98E00A9D000 /* MovieEntity.swift in Sources */,
+				98B94601291EB4040030F3B5 /* DetailsModel.swift in Sources */,
 				98CDC159291DA04100A9D000 /* PhotosCollectionViewCell.swift in Sources */,
 				982BDE1A291D80A600269098 /* ApiManager.swift in Sources */,
 				98C9568F291D7E020035F073 /* AppDelegate.swift in Sources */,
+				98B945FF291EB3F40030F3B5 /* DetailsEntity.swift in Sources */,
+				98B94603291EB41B0030F3B5 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
