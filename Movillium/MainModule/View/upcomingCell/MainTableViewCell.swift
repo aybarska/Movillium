@@ -9,8 +9,10 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var yearLabel: UILabel!
+    
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var posterImageView: UIImageView!
     
     override func awakeFromNib() {

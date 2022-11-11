@@ -28,6 +28,11 @@ class MainViewController: UIViewController {
          setTableView()
          viewModel.viewDelegate = self
          viewModel.didViewLoad()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     
@@ -50,7 +55,7 @@ class MainViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(.init(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "MainTableViewCell")
-        tableView.rowHeight = 230.0
+        tableView.rowHeight = 129.0
     }
 
     @IBAction func pageChanged(_ sender: UIPageControl) {
@@ -111,10 +116,15 @@ extension MainViewController: MainViewModelViewProtocol {
 extension MainViewController: UITableViewDelegate {
       func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //          viewModel.didClickItem(at: indexPath.row)
-//          tableView.deselectRow(at: indexPath, animated: true)
-//          let detailsVC = storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController
-//          detailsVC?.imdbId = items[indexPath.row].imdbID ?? ""
-//          self.navigationController?.pushViewController(detailsVC!, animated: true)
+         tableView.deselectRow(at: indexPath, animated: true)
+          let detailsVC = DetailsViewController()
+          let item = upcomingItems[indexPath.row]
+          detailsVC.id = item.id
+          let backItem = UIBarButtonItem()
+          backItem.title = ""
+          backItem.tintColor = .black
+          navigationItem.backBarButtonItem = backItem
+          self.navigationController?.pushViewController(detailsVC, animated: true)
       }
   }
 
@@ -131,7 +141,8 @@ extension MainViewController: UITableViewDelegate {
           let item = upcomingItems[indexPath.row]
           let imageUrl = "https://image.tmdb.org/t/p/original/" + (item.poster ?? "wwemzKWzjKYJFfCeiB57q3r4Bcm.png")
           cell.titleLabel.text = item.title
-         // cell.descLabel.text = item.desc
+          cell.descLabel.text = item.desc
+          cell.dateLabel.text = item.date
           cell.posterImageView.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "noResult"))
 
           return cell
@@ -142,7 +153,14 @@ extension MainViewController: UITableViewDelegate {
 extension MainViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //
+        let detailsVC = DetailsViewController()
+        let item = currentPlayingItems[indexPath.row]
+        detailsVC.id = item.id
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        backItem.tintColor = .black
+        navigationItem.backBarButtonItem = backItem
+        self.navigationController?.pushViewController(detailsVC, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {

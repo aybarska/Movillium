@@ -21,11 +21,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVF-sI-51b">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVF-sI-51b">
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <subviews>
                         <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kJO-ms-e9i">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="2600"/>
                             <subviews>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eSS-eV-xFN">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
@@ -49,13 +49,13 @@
                                     </connections>
                                 </pageControl>
                                 <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DVL-vs-cCY">
-                                    <rect key="frame" x="0.0" y="258" width="414" height="828"/>
+                                    <rect key="frame" x="0.0" y="260" width="414" height="1957"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </tableView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="1100" id="0fi-5g-zhD"/>
+                                <constraint firstAttribute="height" constant="1500" id="0fi-5g-zhD"/>
                                 <constraint firstItem="DVL-vs-cCY" firstAttribute="top" secondItem="eSS-eV-xFN" secondAttribute="bottom" constant="10" id="Aog-xS-kVr"/>
                                 <constraint firstAttribute="trailing" secondItem="tdE-0j-dDV" secondAttribute="trailing" id="I4H-Ms-95W"/>
                                 <constraint firstAttribute="bottom" secondItem="DVL-vs-cCY" secondAttribute="bottom" id="aqg-DR-NRV"/>
@@ -65,6 +65,7 @@
                                 <constraint firstItem="tdE-0j-dDV" firstAttribute="top" secondItem="eSS-eV-xFN" secondAttribute="bottom" constant="-30" id="sCk-lK-jDV"/>
                                 <constraint firstItem="tdE-0j-dDV" firstAttribute="leading" secondItem="kJO-ms-e9i" secondAttribute="leading" id="v8v-eQ-dkB"/>
                                 <constraint firstItem="DVL-vs-cCY" firstAttribute="leading" secondItem="kJO-ms-e9i" secondAttribute="leading" id="wp7-DA-lac"/>
+                                <constraint firstItem="DVL-vs-cCY" firstAttribute="height" secondItem="kJO-ms-e9i" secondAttribute="height" multiplier="0.752727" id="yVF-Gg-JnQ"/>
                                 <constraint firstItem="eSS-eV-xFN" firstAttribute="top" secondItem="kJO-ms-e9i" secondAttribute="top" id="yta-oR-vDr"/>
                             </constraints>
                         </view>
