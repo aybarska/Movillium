@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="pageControl" destination="tdE-0j-dDV" id="5YX-1u-hUq"/>
                 <outlet property="playingCollectionView" destination="eSS-eV-xFN" id="bnL-Tl-W6g"/>
+                <outlet property="scrollView" destination="iVF-sI-51b" id="zur-jC-4Gk"/>
                 <outlet property="tableView" destination="DVL-vs-cCY" id="PSi-eT-W6B"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

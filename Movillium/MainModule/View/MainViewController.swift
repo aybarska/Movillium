@@ -9,10 +9,11 @@ import UIKit
 import SDWebImage
 
 class MainViewController: UIViewController {
-
+   
+    var refreshControl = UIRefreshControl()
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var playingCollectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var pageControl: UIPageControl!
     
    
@@ -33,9 +34,23 @@ class MainViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
+        
+        self.refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        scrollView.refreshControl = refreshControl
     }
     
-    
+    @objc func refresh(sender:AnyObject) {
+        // Code to refresh table view
+        viewModel.getData()
+        
+        let alert = UIAlertController(title: "Updated", message: "Content updated.", preferredStyle: .alert)
+        self.present(alert, animated: true, completion: nil)
+        let when = DispatchTime.now() + 1
+        DispatchQueue.main.asyncAfter(deadline: when){
+            alert.dismiss(animated: true, completion: nil)
+            self.refreshControl.endRefreshing()
+        }
+    }
 
     private func setCollectionView() {
         let layout = UICollectionViewFlowLayout()
@@ -69,13 +84,7 @@ class MainViewController: UIViewController {
 
 extension MainViewController: MainViewModelViewProtocol {
     
-        func hideLoadingView() {
-            DispatchQueue.main.async {
-                //self.activityIndicator.stopAnimating()
-            }
-        }
     
-        
         func didPlayingCellItemFetch(_ items: [MovieCellViewModel]) {
             self.currentPlayingItems = items
             DispatchQueue.main.async {
@@ -94,10 +103,13 @@ extension MainViewController: MainViewModelViewProtocol {
         func showEmptyView() {
             // has to be in main
             self.currentPlayingItems = []
+            self.upcomingItems = []
+            print("empty view")
             DispatchQueue.main.async {
             let noDataImageView = UIImageView(image: UIImage(named: "noResult"))
                 noDataImageView.contentMode = .scaleAspectFit
             self.playingCollectionView.backgroundView = noDataImageView
+            self.playingCollectionView.backgroundView?.frame = self.view.frame
             self.playingCollectionView.reloadData()
             }
         }
@@ -106,6 +118,9 @@ extension MainViewController: MainViewModelViewProtocol {
             DispatchQueue.main.async {
                 self.playingCollectionView.backgroundView?.isHidden = true
                 self.playingCollectionView.reloadData()
+                self.tableView.backgroundView?.isHidden = true
+                self.tableView.reloadData()
+                self.pageControl.numberOfPages = self.currentPlayingItems.count
             }
         }
     

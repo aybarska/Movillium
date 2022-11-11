@@ -23,6 +23,7 @@ class MovieModel {
                 if error != nil {
                     print("model")
                     print(error!.localizedDescription)
+                    self.delegate?.didDataFetchProcessFinish(isSuccess: false, isUpcoming: true)
                 } else {
                     if let data = data,
                        let moviesList = self.parseLogic(data: data) {

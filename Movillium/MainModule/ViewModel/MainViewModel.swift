@@ -12,7 +12,6 @@ protocol MainViewModelViewProtocol:AnyObject {
     func didUpcomingCellItemFetch(_ items: [MovieCellViewModel])
     func showEmptyView()
     func hideEmptyView()
-    func hideLoadingView()
 }
 
 
@@ -38,11 +37,14 @@ class MainViewModel {
         model.fetchData(url: "https://api.themoviedb.org/3/movie/now_playing?api_key=3b70f74f275d84907544e6c393d356e3", isUpcoming: false)
         
         model.fetchData(url: "https://api.themoviedb.org/3/movie/upcoming?api_key=3b70f74f275d84907544e6c393d356e3", isUpcoming: true)
-        // true halini de gonder ve viewda List icin de bir protocol calistir
     }
     
     func getData() {
+        
         model.fetchData(url: "https://api.themoviedb.org/3/movie/now_playing?api_key=3b70f74f275d84907544e6c393d356e3", isUpcoming: false)
+        
+        model.fetchData(url: "https://api.themoviedb.org/3/movie/upcoming?api_key=3b70f74f275d84907544e6c393d356e3", isUpcoming: true)
+        
     }
 
     
@@ -86,7 +88,6 @@ extension MainViewModel: MoviesModelProtocol {
             viewDelegate?.showEmptyView()
         }
 
-        viewDelegate?.hideLoadingView()
     }
     
 }

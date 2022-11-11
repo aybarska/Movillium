@@ -27,15 +27,6 @@ class ApiManager {
                         }
                     })
         task.resume()
-//        let task = urlSession.dataTask(with: url) { data, response, error in
-//
-//            if error != nil {
-//
-//                completionHandler(nil, error)
-//            } else {
-//                completionHandler(data, nil)
-//            }
-//        }
-       // task.resume()
+
     }
 }
