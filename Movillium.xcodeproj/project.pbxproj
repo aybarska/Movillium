@@ -9,15 +9,23 @@
 /* Begin PBXBuildFile section */
 		084BB2960E07E6A1850A7302 /* Pods_Movillium_MovilliumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA7493381B842B9A7A342B /* Pods_Movillium_MovilliumUITests.framework */; };
 		982BDE1A291D80A600269098 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BDE19291D80A600269098 /* ApiManager.swift */; };
+		98B945F8291E8FAC0030F3B5 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B945F6291E8FAC0030F3B5 /* MainTableViewCell.swift */; };
+		98B945F9291E8FAC0030F3B5 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B945F7291E8FAC0030F3B5 /* MainTableViewCell.xib */; };
+		98B945FC291EA35F0030F3B5 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B945FA291EA35F0030F3B5 /* DetailsViewController.swift */; };
+		98B945FD291EA35F0030F3B5 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B945FB291EA35F0030F3B5 /* DetailsViewController.xib */; };
 		98C9568F291D7E020035F073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9568E291D7E020035F073 /* AppDelegate.swift */; };
-		98C95691291D7E020035F073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C95690291D7E020035F073 /* SceneDelegate.swift */; };
-		98C95693291D7E020035F073 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C95692291D7E020035F073 /* ViewController.swift */; };
-		98C95696291D7E020035F073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C95694291D7E020035F073 /* Main.storyboard */; };
 		98C95698291D7E050035F073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C95697291D7E050035F073 /* Assets.xcassets */; };
 		98C9569B291D7E050035F073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C95699291D7E050035F073 /* LaunchScreen.storyboard */; };
 		98C956A6291D7E050035F073 /* MovilliumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C956A5291D7E050035F073 /* MovilliumTests.swift */; };
 		98C956B0291D7E050035F073 /* MovilliumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C956AF291D7E050035F073 /* MovilliumUITests.swift */; };
 		98C956B2291D7E050035F073 /* MovilliumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C956B1291D7E050035F073 /* MovilliumUITestsLaunchTests.swift */; };
+		98CDC14F291D881900A9D000 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CDC14D291D881900A9D000 /* MainViewController.swift */; };
+		98CDC150291D881900A9D000 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98CDC14E291D881900A9D000 /* MainViewController.xib */; };
+		98CDC159291DA04100A9D000 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CDC157291DA04100A9D000 /* PhotosCollectionViewCell.swift */; };
+		98CDC15A291DA04100A9D000 /* PhotosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98CDC158291DA04100A9D000 /* PhotosCollectionViewCell.xib */; };
+		98CDC15C291DB98E00A9D000 /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CDC15B291DB98E00A9D000 /* MovieEntity.swift */; };
+		98CDC15E291DBABE00A9D000 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CDC15D291DBABE00A9D000 /* MovieModel.swift */; };
+		98CDC160291DC26700A9D000 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CDC15F291DC26700A9D000 /* MainViewModel.swift */; };
 		9D3AEDEC4E9B3DC5D2430017 /* Pods_Movillium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B51F186B38424861243727 /* Pods_Movillium.framework */; };
 		A2623227BFD967FA734B883B /* Pods_MovilliumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D99BC66A59FD09C7475D4B /* Pods_MovilliumTests.framework */; };
 /* End PBXBuildFile section */
@@ -48,11 +56,12 @@
 		80CA7493381B842B9A7A342B /* Pods_Movillium_MovilliumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movillium_MovilliumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B51F186B38424861243727 /* Pods_Movillium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movillium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		982BDE19291D80A600269098 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		98B945F6291E8FAC0030F3B5 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		98B945F7291E8FAC0030F3B5 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		98B945FA291EA35F0030F3B5 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		98B945FB291EA35F0030F3B5 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		98C9568B291D7E020035F073 /* Movillium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movillium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C9568E291D7E020035F073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98C95690291D7E020035F073 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98C95692291D7E020035F073 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		98C95695291D7E020035F073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98C95697291D7E050035F073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98C9569A291D7E050035F073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C9569C291D7E050035F073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +70,13 @@
 		98C956AB291D7E050035F073 /* MovilliumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovilliumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C956AF291D7E050035F073 /* MovilliumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovilliumUITests.swift; sourceTree = "<group>"; };
 		98C956B1291D7E050035F073 /* MovilliumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovilliumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		98CDC14D291D881900A9D000 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		98CDC14E291D881900A9D000 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		98CDC157291DA04100A9D000 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		98CDC158291DA04100A9D000 /* PhotosCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosCollectionViewCell.xib; sourceTree = "<group>"; };
+		98CDC15B291DB98E00A9D000 /* MovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
+		98CDC15D291DBABE00A9D000 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		98CDC15F291DC26700A9D000 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		E70A516ECEBA883046FAD66C /* Pods-Movillium-MovilliumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movillium-MovilliumUITests.debug.xcconfig"; path = "Target Support Files/Pods-Movillium-MovilliumUITests/Pods-Movillium-MovilliumUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FED09A390CF87874402B9A51 /* Pods-Movillium-MovilliumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movillium-MovilliumUITests.release.xcconfig"; path = "Target Support Files/Pods-Movillium-MovilliumUITests/Pods-Movillium-MovilliumUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +119,6 @@
 				6414AE1CF93134C2F6470B14 /* Pods-MovilliumTests.debug.xcconfig */,
 				29B8D3F9E08BEE70D3579428 /* Pods-MovilliumTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -121,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				98C9568E291D7E020035F073 /* AppDelegate.swift */,
-				98C95690291D7E020035F073 /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -149,6 +163,8 @@
 		982BDE12291D7F2800269098 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				98CDC15B291DB98E00A9D000 /* MovieEntity.swift */,
+				98CDC15D291DBABE00A9D000 /* MovieModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,6 +172,10 @@
 		982BDE13291D7F3300269098 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				98B945F5291E8F830030F3B5 /* upcomingCell */,
+				98CDC156291DA00900A9D000 /* playingCell */,
+				98CDC14D291D881900A9D000 /* MainViewController.swift */,
+				98CDC14E291D881900A9D000 /* MainViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +183,7 @@
 		982BDE14291D7F3900269098 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				98CDC15F291DC26700A9D000 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,6 +198,8 @@
 		982BDE16291D7F6C00269098 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				98B945FA291EA35F0030F3B5 /* DetailsViewController.swift */,
+				98B945FB291EA35F0030F3B5 /* DetailsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +217,15 @@
 				982BDE19291D80A600269098 /* ApiManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		98B945F5291E8F830030F3B5 /* upcomingCell */ = {
+			isa = PBXGroup;
+			children = (
+				98B945F6291E8FAC0030F3B5 /* MainTableViewCell.swift */,
+				98B945F7291E8FAC0030F3B5 /* MainTableViewCell.xib */,
+			);
+			path = upcomingCell;
 			sourceTree = "<group>";
 		};
 		98C95682291D7E020035F073 = {
@@ -225,8 +257,6 @@
 				982BDE11291D7ED000269098 /* DetailsModule */,
 				982BDE10291D7EC900269098 /* MainModule */,
 				982BDE0F291D7EA800269098 /* App */,
-				98C95692291D7E020035F073 /* ViewController.swift */,
-				98C95694291D7E020035F073 /* Main.storyboard */,
 				98C95697291D7E050035F073 /* Assets.xcassets */,
 				98C95699291D7E050035F073 /* LaunchScreen.storyboard */,
 				98C9569C291D7E050035F073 /* Info.plist */,
@@ -249,6 +279,15 @@
 				98C956B1291D7E050035F073 /* MovilliumUITestsLaunchTests.swift */,
 			);
 			path = MovilliumUITests;
+			sourceTree = "<group>";
+		};
+		98CDC156291DA00900A9D000 /* playingCell */ = {
+			isa = PBXGroup;
+			children = (
+				98CDC157291DA04100A9D000 /* PhotosCollectionViewCell.swift */,
+				98CDC158291DA04100A9D000 /* PhotosCollectionViewCell.xib */,
+			);
+			path = playingCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,8 +400,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C9569B291D7E050035F073 /* LaunchScreen.storyboard in Resources */,
+				98CDC15A291DA04100A9D000 /* PhotosCollectionViewCell.xib in Resources */,
+				98CDC150291D881900A9D000 /* MainViewController.xib in Resources */,
 				98C95698291D7E050035F073 /* Assets.xcassets in Resources */,
-				98C95696291D7E020035F073 /* Main.storyboard in Resources */,
+				98B945F9291E8FAC0030F3B5 /* MainTableViewCell.xib in Resources */,
+				98B945FD291EA35F0030F3B5 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,10 +532,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CDC160291DC26700A9D000 /* MainViewModel.swift in Sources */,
+				98CDC15E291DBABE00A9D000 /* MovieModel.swift in Sources */,
+				98B945FC291EA35F0030F3B5 /* DetailsViewController.swift in Sources */,
+				98B945F8291E8FAC0030F3B5 /* MainTableViewCell.swift in Sources */,
+				98CDC14F291D881900A9D000 /* MainViewController.swift in Sources */,
+				98CDC15C291DB98E00A9D000 /* MovieEntity.swift in Sources */,
+				98CDC159291DA04100A9D000 /* PhotosCollectionViewCell.swift in Sources */,
 				982BDE1A291D80A600269098 /* ApiManager.swift in Sources */,
-				98C95693291D7E020035F073 /* ViewController.swift in Sources */,
 				98C9568F291D7E020035F073 /* AppDelegate.swift in Sources */,
-				98C95691291D7E020035F073 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,14 +577,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		98C95694291D7E020035F073 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				98C95695291D7E020035F073 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		98C95699291D7E050035F073 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -676,7 +715,6 @@
 				INFOPLIST_FILE = Movillium/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -705,7 +743,6 @@
 				INFOPLIST_FILE = Movillium/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
