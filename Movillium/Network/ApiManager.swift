@@ -6,23 +6,36 @@
 //
 
 import Foundation
+import Alamofire
 
 class ApiManager {
     
     class func getApiResponse(urlPath: String, completionHandler: @escaping (Data?, Error?) -> Void ) {
    
-        let urlSession = URLSession.shared
-        guard let url = URL.init(string: urlPath) else { return }
+      
+        guard let urlStr = URL.init(string: urlPath) else { return }
         
-        let task = urlSession.dataTask(with: url) { data, response, error in
-            
-            if error != nil {
-               
-                completionHandler(nil, error)
-            } else {
-                completionHandler(data, nil)
-            }
-        }
+        let task = AF.request(urlStr, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil)
+                    .responseJSON(completionHandler: { response in
+                        switch response.result {
+                        case .success:
+                            let data = response.data
+                            completionHandler(data, nil)
+                        case .failure(let error):
+                            print(error)
+                            completionHandler(nil, error)
+                        }
+                    })
         task.resume()
+//        let task = urlSession.dataTask(with: url) { data, response, error in
+//
+//            if error != nil {
+//
+//                completionHandler(nil, error)
+//            } else {
+//                completionHandler(data, nil)
+//            }
+//        }
+       // task.resume()
     }
 }

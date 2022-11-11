@@ -9,6 +9,7 @@ import Foundation
 import Foundation
 protocol MainViewModelViewProtocol:AnyObject {
     func didPlayingCellItemFetch(_ items: [MovieCellViewModel])
+    func didUpcomingCellItemFetch(_ items: [MovieCellViewModel])
     func showEmptyView()
     func hideEmptyView()
     func hideLoadingView()
@@ -33,7 +34,10 @@ class MainViewModel {
     }
     
     func didViewLoad() {
+        
         model.fetchData(url: "https://api.themoviedb.org/3/movie/now_playing?api_key=3b70f74f275d84907544e6c393d356e3", isUpcoming: false)
+        
+        model.fetchData(url: "https://api.themoviedb.org/3/movie/upcoming?api_key=3b70f74f275d84907544e6c393d356e3", isUpcoming: true)
         // true halini de gonder ve viewda List icin de bir protocol calistir
     }
     
@@ -70,9 +74,9 @@ extension MainViewModel: MoviesModelProtocol {
             } else {
                 print(items)
                 if(isUpcoming) {
-                    
+                    viewDelegate?.didUpcomingCellItemFetch(items)
                 } else {
-                 viewDelegate?.didPlayingCellItemFetch(items)
+                    viewDelegate?.didPlayingCellItemFetch(items)
                 }
                 
                 viewDelegate?.hideEmptyView()

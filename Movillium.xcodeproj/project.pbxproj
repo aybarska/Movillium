@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		084BB2960E07E6A1850A7302 /* Pods_Movillium_MovilliumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA7493381B842B9A7A342B /* Pods_Movillium_MovilliumUITests.framework */; };
 		982BDE1A291D80A600269098 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BDE19291D80A600269098 /* ApiManager.swift */; };
+		98B945F8291E8FAC0030F3B5 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B945F6291E8FAC0030F3B5 /* MainTableViewCell.swift */; };
+		98B945F9291E8FAC0030F3B5 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B945F7291E8FAC0030F3B5 /* MainTableViewCell.xib */; };
 		98C9568F291D7E020035F073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9568E291D7E020035F073 /* AppDelegate.swift */; };
 		98C95698291D7E050035F073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C95697291D7E050035F073 /* Assets.xcassets */; };
 		98C9569B291D7E050035F073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C95699291D7E050035F073 /* LaunchScreen.storyboard */; };
@@ -52,6 +54,8 @@
 		80CA7493381B842B9A7A342B /* Pods_Movillium_MovilliumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movillium_MovilliumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B51F186B38424861243727 /* Pods_Movillium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movillium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		982BDE19291D80A600269098 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		98B945F6291E8FAC0030F3B5 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		98B945F7291E8FAC0030F3B5 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		98C9568B291D7E020035F073 /* Movillium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movillium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C9568E291D7E020035F073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98C95697291D7E050035F073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 		982BDE13291D7F3300269098 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				98B945F5291E8F830030F3B5 /* upcomingCell */,
 				98CDC156291DA00900A9D000 /* playingCell */,
 				98CDC14D291D881900A9D000 /* MainViewController.swift */,
 				98CDC14E291D881900A9D000 /* MainViewController.xib */,
@@ -206,6 +211,15 @@
 				982BDE19291D80A600269098 /* ApiManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		98B945F5291E8F830030F3B5 /* upcomingCell */ = {
+			isa = PBXGroup;
+			children = (
+				98B945F6291E8FAC0030F3B5 /* MainTableViewCell.swift */,
+				98B945F7291E8FAC0030F3B5 /* MainTableViewCell.xib */,
+			);
+			path = upcomingCell;
 			sourceTree = "<group>";
 		};
 		98C95682291D7E020035F073 = {
@@ -383,6 +397,7 @@
 				98CDC15A291DA04100A9D000 /* PhotosCollectionViewCell.xib in Resources */,
 				98CDC150291D881900A9D000 /* MainViewController.xib in Resources */,
 				98C95698291D7E050035F073 /* Assets.xcassets in Resources */,
+				98B945F9291E8FAC0030F3B5 /* MainTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +527,7 @@
 			files = (
 				98CDC160291DC26700A9D000 /* MainViewModel.swift in Sources */,
 				98CDC15E291DBABE00A9D000 /* MovieModel.swift in Sources */,
+				98B945F8291E8FAC0030F3B5 /* MainTableViewCell.swift in Sources */,
 				98CDC14F291D881900A9D000 /* MainViewController.swift in Sources */,
 				98CDC15C291DB98E00A9D000 /* MovieEntity.swift in Sources */,
 				98CDC159291DA04100A9D000 /* PhotosCollectionViewCell.swift in Sources */,

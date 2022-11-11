@@ -18,7 +18,7 @@ class MovieModel {
     func fetchData(url: String, isUpcoming: Bool) {
         
         // MARK: Get Movies Api
-
+            print("fetch")
             ApiManager.getApiResponse(urlPath: url) { data, error in
                 if error != nil {
                     print("model")
@@ -26,6 +26,7 @@ class MovieModel {
                 } else {
                     if let data = data,
                        let moviesList = self.parseLogic(data: data) {
+                        print("data")
                         self.movies = moviesList
                         self.delegate?.didDataFetchProcessFinish(isSuccess: true, isUpcoming: isUpcoming)
                     }
@@ -39,6 +40,7 @@ class MovieModel {
     private func parseLogic(data:Data) -> [Result]? {
                     do {
                         let jsonDecoder = JSONDecoder()
+                        print("decode")
                         let moviesData = try jsonDecoder.decode(Movies.self, from: data)
                         return moviesData.results
                     } catch {

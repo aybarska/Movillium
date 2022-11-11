@@ -11,20 +11,27 @@ import SDWebImage
 class MainViewController: UIViewController {
 
     @IBOutlet weak var playingCollectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
+    
     @IBOutlet weak var pageControl: UIPageControl!
     
-    //let currentPlayingItems = ["placeholder","placeholder2"]
+   
     private let viewModel = MainViewModel()
     
     private var currentPlayingItems: [MovieCellViewModel] = []
+    private var upcomingItems: [MovieCellViewModel] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
          setCollectionView()
+         setTableView()
          viewModel.viewDelegate = self
          viewModel.didViewLoad()
     }
     
+    
+
     private func setCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -39,6 +46,12 @@ class MainViewController: UIViewController {
         pageControl.numberOfPages = currentPlayingItems.count
     }
 
+    private func setTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(.init(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "MainTableViewCell")
+        tableView.rowHeight = 230.0
+    }
 
     @IBAction func pageChanged(_ sender: UIPageControl) {
         let page: Int? = sender.currentPage
@@ -65,6 +78,13 @@ extension MainViewController: MainViewModelViewProtocol {
                 self.pageControl.numberOfPages = self.currentPlayingItems.count
             }
         }
+    
+        func didUpcomingCellItemFetch(_ items: [MovieCellViewModel]) {
+            self.upcomingItems = items
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
         
         func showEmptyView() {
             // has to be in main
@@ -87,6 +107,37 @@ extension MainViewController: MainViewModelViewProtocol {
 
         
     }
+
+extension MainViewController: UITableViewDelegate {
+      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//          viewModel.didClickItem(at: indexPath.row)
+//          tableView.deselectRow(at: indexPath, animated: true)
+//          let detailsVC = storyboard?.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController
+//          detailsVC?.imdbId = items[indexPath.row].imdbID ?? ""
+//          self.navigationController?.pushViewController(detailsVC!, animated: true)
+      }
+  }
+
+  extension MainViewController: UITableViewDataSource {
+      
+      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+          return upcomingItems.count
+      }
+      
+      
+      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+          let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell") as! MainTableViewCell
+         
+          let item = upcomingItems[indexPath.row]
+          let imageUrl = "https://image.tmdb.org/t/p/original/" + (item.poster ?? "wwemzKWzjKYJFfCeiB57q3r4Bcm.png")
+          cell.titleLabel.text = item.title
+         // cell.descLabel.text = item.desc
+          cell.posterImageView.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "noResult"))
+
+          return cell
+      }
+      
+  }
 
 extension MainViewController: UICollectionViewDelegate {
 
