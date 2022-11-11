@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Movillium" customModuleProvider="target">
+            <connections>
+                <outlet property="pageControl" destination="tdE-0j-dDV" id="5YX-1u-hUq"/>
+                <outlet property="playingCollectionView" destination="eSS-eV-xFN" id="bnL-Tl-W6g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVF-sI-51b">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJO-ms-e9i">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                            <subviews>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eSS-eV-xFN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="vqd-Sb-E2a"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qQ9-PQ-9qH">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <pageControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="tdE-0j-dDV">
+                                    <rect key="frame" x="0.0" y="220" width="414" height="26"/>
+                                    <color key="pageIndicatorTintColor" systemColor="systemGray4Color"/>
+                                    <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="pageChanged:" destination="-1" eventType="valueChanged" id="bFo-W9-vvU"/>
+                                    </connections>
+                                </pageControl>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1100" id="0fi-5g-zhD"/>
+                                <constraint firstAttribute="trailing" secondItem="tdE-0j-dDV" secondAttribute="trailing" id="I4H-Ms-95W"/>
+                                <constraint firstAttribute="trailing" secondItem="eSS-eV-xFN" secondAttribute="trailing" id="bQF-1n-GW5"/>
+                                <constraint firstItem="eSS-eV-xFN" firstAttribute="leading" secondItem="kJO-ms-e9i" secondAttribute="leading" id="lsT-a8-JnC"/>
+                                <constraint firstItem="tdE-0j-dDV" firstAttribute="top" secondItem="eSS-eV-xFN" secondAttribute="bottom" constant="-30" id="sCk-lK-jDV"/>
+                                <constraint firstItem="tdE-0j-dDV" firstAttribute="leading" secondItem="kJO-ms-e9i" secondAttribute="leading" id="v8v-eQ-dkB"/>
+                                <constraint firstItem="eSS-eV-xFN" firstAttribute="top" secondItem="kJO-ms-e9i" secondAttribute="top" id="yta-oR-vDr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="kJO-ms-e9i" firstAttribute="top" secondItem="iVF-sI-51b" secondAttribute="top" id="6h9-hB-UWA"/>
+                        <constraint firstAttribute="bottom" secondItem="kJO-ms-e9i" secondAttribute="bottom" id="Mpb-gn-4h4"/>
+                        <constraint firstItem="kJO-ms-e9i" firstAttribute="leading" secondItem="iVF-sI-51b" secondAttribute="leading" id="NRf-oi-TUd"/>
+                        <constraint firstAttribute="trailing" secondItem="kJO-ms-e9i" secondAttribute="trailing" id="qk2-Kf-Qxy"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="iVF-sI-51b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Aw6-WM-ZuS"/>
+                <constraint firstItem="iVF-sI-51b" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hD2-gy-OtQ"/>
+                <constraint firstAttribute="bottom" secondItem="iVF-sI-51b" secondAttribute="bottom" id="ilC-ko-775"/>
+                <constraint firstItem="iVF-sI-51b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="m6w-Xz-a1a"/>
+                <constraint firstItem="kJO-ms-e9i" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1.22768" id="rqa-P0-3fL"/>
+                <constraint firstItem="kJO-ms-e9i" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="zbk-oE-MtM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

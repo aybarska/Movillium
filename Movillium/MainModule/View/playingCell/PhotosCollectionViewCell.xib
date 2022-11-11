@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotosCollectionViewCell" customModule="Movillium" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="QSD-FE-3X5">
+                        <rect key="frame" x="0.0" y="0.0" width="431" height="250"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="A pair of young lovers flee their New England town, which causes a local search party to fan out to find them." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Qg-08-PYW">
+                        <rect key="frame" x="20" y="174.5" width="391" height="40.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moonrise Kingdom (2012)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mgh-j7-q4d">
+                        <rect key="frame" x="20" y="140" width="391" height="26.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" systemColor="labelColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3Qg-08-PYW" secondAttribute="trailing" constant="20" id="0Fs-CH-knS"/>
+                <constraint firstAttribute="trailing" secondItem="QSD-FE-3X5" secondAttribute="trailing" id="JDn-EP-wMh"/>
+                <constraint firstAttribute="trailing" secondItem="mgh-j7-q4d" secondAttribute="trailing" constant="20" id="OUh-a8-ykJ"/>
+                <constraint firstItem="QSD-FE-3X5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xlr-BO-5ry"/>
+                <constraint firstItem="mgh-j7-q4d" firstAttribute="top" relation="lessThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" constant="140" id="Z2n-l2-2gK"/>
+                <constraint firstAttribute="bottom" secondItem="3Qg-08-PYW" secondAttribute="bottom" constant="35" id="eGc-h5-FTp"/>
+                <constraint firstAttribute="bottom" secondItem="QSD-FE-3X5" secondAttribute="bottom" id="gWY-Sl-1tf"/>
+                <constraint firstItem="3Qg-08-PYW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="jXJ-E6-nhK"/>
+                <constraint firstItem="QSD-FE-3X5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="o8X-5x-WAJ"/>
+                <constraint firstItem="mgh-j7-q4d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="ofY-Jv-Oc5"/>
+                <constraint firstItem="3Qg-08-PYW" firstAttribute="top" secondItem="mgh-j7-q4d" secondAttribute="bottom" constant="8" symbolic="YES" id="uO7-y9-z5H"/>
+            </constraints>
+            <size key="customSize" width="431" height="250"/>
+            <connections>
+                <outlet property="descLabel" destination="3Qg-08-PYW" id="XaK-bE-8B8"/>
+                <outlet property="imagelView" destination="QSD-FE-3X5" id="3eD-P2-xCf"/>
+                <outlet property="titleLabel" destination="mgh-j7-q4d" id="cOo-Mu-9zt"/>
+            </connections>
+            <point key="canvasLocation" x="412.31884057971018" y="220.3125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="1920" height="1282"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
