@@ -29,15 +29,10 @@ class DetailsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         viewModel.getData(id: id ?? 0)
     }
-
-
-
 }
 
 extension DetailsViewController: DetailsViewModelViewProtocol {
-    
-    
-        
+
         func didItemFetch(_ items: Details) {
             self.item = items
             DispatchQueue.main.async {
@@ -53,7 +48,6 @@ extension DetailsViewController: DetailsViewModelViewProtocol {
         
         func showEmptyView() {
             // has to be in main
-            //self.item = []
             DispatchQueue.main.async {
             let noDataImageView = UIImageView(image: UIImage(named: "noResult"))
             noDataImageView.contentMode = .scaleAspectFit
