@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import FirebaseAnalytics
+
 protocol DetailsModelProtocol:AnyObject {
     func didDataFetchProcessFinish(isSuccess: Bool)
 }
@@ -13,6 +15,7 @@ protocol DetailsModelProtocol:AnyObject {
 class DetailsModel {
     weak var delegate: DetailsModelProtocol?
     var movie: Details?
+    
     
     func fetchData(url: String) {
         
@@ -27,6 +30,7 @@ class DetailsModel {
                        let movie = self.parseLogic(data: data) {
                         print("data")
                         self.movie = movie
+                        self.sendFirebaseEvent(name: self.movie?.originalTitle ?? "Error in fetchData")
                         self.delegate?.didDataFetchProcessFinish(isSuccess: true)
                     }
                 }
@@ -34,7 +38,13 @@ class DetailsModel {
 
     }
     
-    
+    private func sendFirebaseEvent(name: String) {
+        //SEND firebase analytics
+        Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+          AnalyticsParameterItemName: name,
+          AnalyticsParameterContentType: "movie"
+          ])
+    }
     
     private func parseLogic(data:Data) -> Details? {
                     do {

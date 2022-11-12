@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		084BB2960E07E6A1850A7302 /* Pods_Movillium_MovilliumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA7493381B842B9A7A342B /* Pods_Movillium_MovilliumUITests.framework */; };
 		982BDE1A291D80A600269098 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982BDE19291D80A600269098 /* ApiManager.swift */; };
+		98A5B2EB291F7A9F0074DC84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98A5B2EA291F7A9F0074DC84 /* GoogleService-Info.plist */; };
 		98B945F8291E8FAC0030F3B5 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B945F6291E8FAC0030F3B5 /* MainTableViewCell.swift */; };
 		98B945F9291E8FAC0030F3B5 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B945F7291E8FAC0030F3B5 /* MainTableViewCell.xib */; };
 		98B945FC291EA35F0030F3B5 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B945FA291EA35F0030F3B5 /* DetailsViewController.swift */; };
@@ -59,6 +60,7 @@
 		80CA7493381B842B9A7A342B /* Pods_Movillium_MovilliumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movillium_MovilliumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B51F186B38424861243727 /* Pods_Movillium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movillium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		982BDE19291D80A600269098 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		98A5B2EA291F7A9F0074DC84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		98B945F6291E8FAC0030F3B5 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		98B945F7291E8FAC0030F3B5 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		98B945FA291EA35F0030F3B5 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				982BDE10291D7EC900269098 /* MainModule */,
 				982BDE0F291D7EA800269098 /* App */,
 				98C95697291D7E050035F073 /* Assets.xcassets */,
+				98A5B2EA291F7A9F0074DC84 /* GoogleService-Info.plist */,
 				98C95699291D7E050035F073 /* LaunchScreen.storyboard */,
 				98C9569C291D7E050035F073 /* Info.plist */,
 			);
@@ -414,6 +417,7 @@
 				98C95698291D7E050035F073 /* Assets.xcassets in Resources */,
 				98B945F9291E8FAC0030F3B5 /* MainTableViewCell.xib in Resources */,
 				98B945FD291EA35F0030F3B5 /* DetailsViewController.xib in Resources */,
+				98A5B2EB291F7A9F0074DC84 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

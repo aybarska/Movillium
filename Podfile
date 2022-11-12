@@ -8,6 +8,7 @@ target 'Movillium' do
   # Pods for Movillium
     pod 'Alamofire'
     pod 'SDWebImage'
+    pod 'Firebase/Core'
 
   target 'MovilliumTests' do
     inherit! :search_paths
